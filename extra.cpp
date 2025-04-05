@@ -226,9 +226,8 @@ int main(){
     int n, a, b, c;
     cin >> n >> a >> b >> c;
 
-    // Creamos un vector para dp, inicializado con un valor muy pequeño para representar -infinito.
     vector<int> dp(n + 1, -1e9);
-    dp[0] = 0; // 0 piezas para una cinta de longitud 0.
+    dp[0] = 0; 
 
     for (int i = 1; i <= n; i++){
         if(i >= a)
